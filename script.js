@@ -1,3 +1,13 @@
+function insta() {
+    window.open("https://www.instagram.com/verhaxity/",
+            ""); 
+};
+
+function reload() {
+    window.location.reload();
+}
+
+
 function startLoader() {
     let counterElement = document.querySelector(".count p");
     let currentValue = 0;
@@ -70,7 +80,8 @@ gsap.from(".header h1", {
 })
 
 gsap.to(".img", {
-    clipPath: "polygon (0 0, 100% 0, 100% 100%, 0 100%)",
+    opacity:"100%",
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     ease: "power4.inOut",
     duration: 1.5,
     delay: 4.5,
