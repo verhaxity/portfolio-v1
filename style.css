@@ -75,9 +75,13 @@ html, body {
     z-index: -1;
 }
 
+.pre-loader { 
+    z-index: 2 
+}
+
 .site-content {
     position: relative;
-    z-index: -2;
+    z-index: 0;
 }
 
 nav {
@@ -143,6 +147,7 @@ footer > div {
 }
 
 .img {
+    opacity: 0;
     width: 225px;
     height: 150px;
     clip-path: polygon (0 0, 0 0, 0 100%, 0 100%);
